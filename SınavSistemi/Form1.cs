@@ -50,10 +50,14 @@ namespace SınavSistemi
             com = new SqlCommand();
             con.Open();
             com.Connection = con;
-            com.CommandText = "select *from Bilgi where mail='" + txt_mailg.Text + "'and sifre='" + txt_sifreg.Text +"'and kullanici_turu'"+g+"'";
+            com.CommandText = "select *from Bilgi where mail='" + txt_mailg.Text + "'and sifre='" + txt_sifreg.Text +"'";
+
+            
+
             dr = com.ExecuteReader();
             if (dr.Read())
             {
+                
                 /*if ( g== "Öğrenci")
                 {
                     OgrenciGirisi og = new OgrenciGirisi();
