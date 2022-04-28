@@ -33,6 +33,7 @@ namespace SınavSistemi
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -42,7 +43,8 @@ namespace SınavSistemi
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +63,18 @@ namespace SınavSistemi
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(346, 358);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::SınavSistemi.Properties.Resources._2121601;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(-68, 0);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(478, 394);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // guna2HtmlLabel1
             // 
@@ -134,7 +148,7 @@ namespace SınavSistemi
             this.txt_sifreg.HoverState.Parent = this.txt_sifreg;
             this.txt_sifreg.Location = new System.Drawing.Point(373, 179);
             this.txt_sifreg.Name = "txt_sifreg";
-            this.txt_sifreg.PasswordChar = '\0';
+            this.txt_sifreg.PasswordChar = '.';
             this.txt_sifreg.PlaceholderText = "";
             this.txt_sifreg.SelectedText = "";
             this.txt_sifreg.ShadowDecoration.Parent = this.txt_sifreg;
@@ -173,6 +187,7 @@ namespace SınavSistemi
             this.guna2Button1.Size = new System.Drawing.Size(114, 37);
             this.guna2Button1.TabIndex = 7;
             this.guna2Button1.Text = "Giriş Yap";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2HtmlLabel4
             // 
@@ -195,23 +210,34 @@ namespace SınavSistemi
             this.linkLabel1.Text = "Hesap Oluşur";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // guna2PictureBox1
+            // guna2HtmlLabel5
             // 
-            this.guna2PictureBox1.Image = global::SınavSistemi.Properties.Resources._2121601;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(-68, 0);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(478, 394);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(379, 273);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(135, 18);
+            this.guna2HtmlLabel5.TabIndex = 10;
+            this.guna2HtmlLabel5.Text = "Şifrenizi mi unuttunuz?";
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Location = new System.Drawing.Point(516, 276);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(81, 13);
+            this.linkLabel2.TabIndex = 11;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Şifremi Unuttum";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(683, 358);
+            this.Controls.Add(this.linkLabel2);
+            this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2Button1);
@@ -248,6 +274,8 @@ namespace SınavSistemi
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private System.Windows.Forms.LinkLabel linkLabel2;
     }
 }
 

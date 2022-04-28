@@ -226,7 +226,7 @@ namespace SınavSistemi
             this.txt_sifre.HoverState.Parent = this.txt_sifre;
             this.txt_sifre.Location = new System.Drawing.Point(356, 235);
             this.txt_sifre.Name = "txt_sifre";
-            this.txt_sifre.PasswordChar = '\0';
+            this.txt_sifre.PasswordChar = '.';
             this.txt_sifre.PlaceholderText = "";
             this.txt_sifre.SelectedText = "";
             this.txt_sifre.ShadowDecoration.Parent = this.txt_sifre;
@@ -251,6 +251,7 @@ namespace SınavSistemi
             this.guna2Button1.Size = new System.Drawing.Size(98, 30);
             this.guna2Button1.TabIndex = 11;
             this.guna2Button1.Text = "Kayıt Ol";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2HtmlLabel6
             // 
@@ -289,6 +290,7 @@ namespace SınavSistemi
             this.rb_admin.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.rb_admin.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rb_admin.CheckedState.InnerOffset = -4;
+            this.rb_admin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.rb_admin.Location = new System.Drawing.Point(356, 303);
             this.rb_admin.Name = "rb_admin";
             this.rb_admin.Size = new System.Drawing.Size(54, 17);
