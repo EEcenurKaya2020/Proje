@@ -49,12 +49,12 @@ namespace SınavSistemi
                 {
                     komut.Parameters.AddWithValue("@Dogru", txt_b.Text);
                 }
-                else if (txt_dc.Text == "B")
+                else if (txt_dc.Text == "C")
                 {
                     komut.Parameters.AddWithValue("@Dogru", txt_c.Text);
 
                 }
-                else if (txt_dc.Text == "B")
+                else if (txt_dc.Text == "D")
                 {
                     komut.Parameters.AddWithValue("@Dogru", txt_d.Text);
                 }
