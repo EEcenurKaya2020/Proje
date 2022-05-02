@@ -17,7 +17,6 @@ namespace SınavSistemi
         SqlConnection con;
         SqlDataReader dr;
         SqlCommand com;
-        string g;
         public Form1()
         {
             InitializeComponent();
@@ -58,27 +57,27 @@ namespace SınavSistemi
             if (dr.Read())
             {
                 
-                /*if ( g== "Öğrenci")
+                if (dr["kullanici_turu"].ToString()== "Öğrenci")
                 {
                     OgrenciGirisi og = new OgrenciGirisi();
                     og.Show();
                     MessageBox.Show("Giriş Başarılı");
 
                 }
-                else if (g == "Sınav Sorumlusu")
+                else if (dr["kullanici_turu"].ToString() == "Sınav Sorumlusu")
                 {
                     SinavSorumlusuGirisi ssg = new SinavSorumlusuGirisi();
                     ssg.Show();
                     MessageBox.Show("Giriş Başarılı");
 
                 }
-                else if (g == "Admin")
+                else if (dr["kullanici_turu"].ToString() == "Admin")
                 {
                     AdminGirisi ag = new AdminGirisi();
                     ag.Show();
                     MessageBox.Show("Giriş Başarılı");
 
-                }*/
+                }
                 MessageBox.Show("Giriş Başarılı");
             }
             else
