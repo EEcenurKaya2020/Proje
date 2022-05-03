@@ -78,7 +78,7 @@ namespace SınavSistemi
                     MessageBox.Show("Giriş Başarılı");
 
                 }
-                MessageBox.Show("Giriş Başarılı");
+              
             }
             else
             {
