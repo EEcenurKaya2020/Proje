@@ -39,7 +39,7 @@ namespace SınavSistemi
             if (sayac < 10)
             {
                 timer1.Start();
-                dakika = 10;
+                dakika = 1;
 
                 con = new SqlConnection("Data Source=DESKTOP-HVTB9LK;Integrated Security=SSPI;Initial Catalog=YazilimYapimi");
                 cmd = new SqlCommand();
@@ -90,8 +90,11 @@ namespace SınavSistemi
             }
             else
             {
+                timer1.Stop();
+                this.Hide();
                 OgrenciGirisi og = new OgrenciGirisi();
                 og.ShowDialog();
+                
             }
 
             }
@@ -114,6 +117,10 @@ namespace SınavSistemi
                 lbl_dk.Text ="00"; 
                 lbl_sn.Text = "00";
                 MessageBox.Show("süre bitti");
+                OgrenciGirisi og = new OgrenciGirisi();
+                og.ShowDialog();
+                SinavOl so = new SinavOl();
+                so.Hide();
             }
         }
     }

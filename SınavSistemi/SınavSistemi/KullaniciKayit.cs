@@ -30,6 +30,7 @@ namespace SınavSistemi
         {
             Form1 f1 = new Form1();
             f1.ShowDialog();
+            this.Hide();
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -69,6 +70,10 @@ namespace SınavSistemi
             {
                 MessageBox.Show("Hata meydana geldi", hata.Message);
             }
+
+            Form1 f1 = new Form1();
+            f1.ShowDialog();
+            this.Hide();
         }
     }
 }

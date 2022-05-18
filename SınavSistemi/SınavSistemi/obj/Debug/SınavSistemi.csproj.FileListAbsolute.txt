@@ -17,3 +17,4 @@ C:\Users\Enes Kaya\source\repos\SınavSistemi\SınavSistemi\obj\Debug\SınavSist
 C:\Users\Enes Kaya\source\repos\SınavSistemi\SınavSistemi\obj\Debug\SınavSistemi.AdminGirisi.resources
 C:\Users\Enes Kaya\source\repos\SınavSistemi\SınavSistemi\obj\Debug\SınavSistemi.OgrenciGirisi.resources
 C:\Users\Enes Kaya\source\repos\SınavSistemi\SınavSistemi\obj\Debug\SınavSistemi.SinavOl.resources
+C:\Users\Enes Kaya\source\repos\SınavSistemi\SınavSistemi\obj\Debug\SınavSistemi.Ayarlar.resources

@@ -152,7 +152,7 @@ namespace SınavSistemi
             this.txt_yeni_sifre.HoverState.Parent = this.txt_yeni_sifre;
             this.txt_yeni_sifre.Location = new System.Drawing.Point(350, 104);
             this.txt_yeni_sifre.Name = "txt_yeni_sifre";
-            this.txt_yeni_sifre.PasswordChar = '\0';
+            this.txt_yeni_sifre.PasswordChar = '.';
             this.txt_yeni_sifre.PlaceholderText = "";
             this.txt_yeni_sifre.SelectedText = "";
             this.txt_yeni_sifre.ShadowDecoration.Parent = this.txt_yeni_sifre;
@@ -176,7 +176,7 @@ namespace SınavSistemi
             this.txt_sifre_tekrar.HoverState.Parent = this.txt_sifre_tekrar;
             this.txt_sifre_tekrar.Location = new System.Drawing.Point(350, 177);
             this.txt_sifre_tekrar.Name = "txt_sifre_tekrar";
-            this.txt_sifre_tekrar.PasswordChar = '\0';
+            this.txt_sifre_tekrar.PasswordChar = '.';
             this.txt_sifre_tekrar.PlaceholderText = "";
             this.txt_sifre_tekrar.SelectedText = "";
             this.txt_sifre_tekrar.ShadowDecoration.Parent = this.txt_sifre_tekrar;

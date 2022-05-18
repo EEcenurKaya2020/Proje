@@ -247,7 +247,7 @@ namespace SınavSistemi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SınavSistemi.Properties.Resources.clipboard_with_checklist_paper_note_icon_symbol_purple_background_3d_rendering;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(205)))), ((int)(((byte)(252)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(652, 298);
             this.Controls.Add(this.guna2HtmlLabel2);

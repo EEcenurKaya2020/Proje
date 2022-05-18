@@ -38,6 +38,7 @@ namespace SınavSistemi
                 MessageBox.Show("Şifre başarıyla değiştirildi");
                 Form1 f1 = new Form1();
                 f1.ShowDialog();
+                this.Hide();
             }
             else
             {

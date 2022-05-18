@@ -225,7 +225,7 @@ namespace SınavSistemi
             this.txt_dgr.PlaceholderText = "";
             this.txt_dgr.SelectedText = "";
             this.txt_dgr.ShadowDecoration.Parent = this.txt_dgr;
-            this.txt_dgr.Size = new System.Drawing.Size(28, 23);
+            this.txt_dgr.Size = new System.Drawing.Size(41, 23);
             this.txt_dgr.TabIndex = 22;
             // 
             // picture

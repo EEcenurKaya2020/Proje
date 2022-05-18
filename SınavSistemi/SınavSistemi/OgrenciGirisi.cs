@@ -24,13 +24,21 @@ namespace SınavSistemi
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            SinavOl so = new SinavOl();
-            so.ShowDialog();
+            
         }
 
         private void guna2Button3_Click_1(object sender, EventArgs e)
         {
+            Ayarlar a = new Ayarlar();
+            a.ShowDialog();
+            this.Hide();
+        }
 
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            SinavOl so = new SinavOl();
+            so.ShowDialog();
+            this.Hide();
         }
     }
 }

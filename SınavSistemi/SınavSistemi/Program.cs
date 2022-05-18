@@ -16,7 +16,7 @@ namespace SınavSistemi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SinavOl());
+            Application.Run(new SinavSorumlusuGirisi());
         }
     }
 }

@@ -39,7 +39,7 @@ namespace SınavSistemi
 
                 if (connect.State == ConnectionState.Closed)
                     connect.Open();
-                string kayit = "insert into SoruEkle (Soru, A, B, C, D, Dogru, Resim) values(@Soru, @A, @B, @C, @D, @Dogru, @Resim)";
+                string kayit = "insert into SoruEklee (Soru, A, B, C, D, Dogru, Resim) values(@Soru, @A, @B, @C, @D, @Dogru, @Resim)";
                 SqlCommand komut = new SqlCommand(kayit, connect);
 
 
@@ -53,20 +53,20 @@ namespace SınavSistemi
 
                 if (txt_dgr.Text == "A")
                 {
-                    komut.Parameters.AddWithValue("@Dogru", txt_a.Text);
+                    komut.Parameters.AddWithValue("@Dogru", "A");
                 }
                 else if (txt_dgr.Text == "B")
                 {
-                    komut.Parameters.AddWithValue("@Dogru", txt_b.Text);
+                    komut.Parameters.AddWithValue("@Dogru", "B");
                 }
                 else if (txt_dgr.Text == "C")
                 {
-                    komut.Parameters.AddWithValue("@Dogru", txt_c.Text);
+                    komut.Parameters.AddWithValue("@Dogru", "C");
 
                 }
                 else if (txt_dgr.Text == "D")
                 {
-                    komut.Parameters.AddWithValue("@Dogru", txt_d.Text);
+                    komut.Parameters.AddWithValue("@Dogru", "D");
                 }
                 else
                 {

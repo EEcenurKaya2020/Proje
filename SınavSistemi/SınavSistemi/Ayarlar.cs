@@ -16,5 +16,10 @@ namespace SınavSistemi
         {
             InitializeComponent();
         }
+
+        private void Ayarlar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

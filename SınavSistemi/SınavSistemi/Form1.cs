@@ -36,6 +36,7 @@ namespace SınavSistemi
         {
             KullaniciKayit kk = new KullaniciKayit();
             kk.ShowDialog();
+            this.Hide();
         }
 
      
@@ -85,7 +86,9 @@ namespace SınavSistemi
                 MessageBox.Show("Bilgilerinizi Kontrol Ediniz");
             }
             con.Close();
-            
+
+            this.Hide();
+
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

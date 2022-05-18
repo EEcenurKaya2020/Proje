@@ -48,9 +48,7 @@ namespace SınavSistemi
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txt_dgr = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Picture = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Picture)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_sorua
@@ -371,21 +369,8 @@ namespace SınavSistemi
             this.txt_dgr.PlaceholderText = "";
             this.txt_dgr.SelectedText = "";
             this.txt_dgr.ShadowDecoration.Parent = this.txt_dgr;
-            this.txt_dgr.Size = new System.Drawing.Size(28, 22);
+            this.txt_dgr.Size = new System.Drawing.Size(38, 22);
             this.txt_dgr.TabIndex = 15;
-            // 
-            // Picture
-            // 
-            this.Picture.BackColor = System.Drawing.Color.Transparent;
-            this.Picture.BorderRadius = 5;
-            this.Picture.ImageRotate = 0F;
-            this.Picture.Location = new System.Drawing.Point(529, 45);
-            this.Picture.Name = "Picture";
-            this.Picture.ShadowDecoration.Parent = this.Picture;
-            this.Picture.Size = new System.Drawing.Size(236, 190);
-            this.Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Picture.TabIndex = 16;
-            this.Picture.TabStop = false;
             // 
             // AdminGirisi
             // 
@@ -394,7 +379,6 @@ namespace SınavSistemi
             this.BackgroundImage = global::SınavSistemi.Properties.Resources.clipboard_with_checklist_paper_note_icon_symbol_purple_background_3d_rendering;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 733);
-            this.Controls.Add(this.Picture);
             this.Controls.Add(this.txt_dgr);
             this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.guna2ControlBox1);
@@ -416,7 +400,6 @@ namespace SınavSistemi
             this.Text = "AdminGirisi";
             this.Load += new System.EventHandler(this.AdminGirisi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -440,6 +423,5 @@ namespace SınavSistemi
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2TextBox txt_dgr;
-        private Guna.UI2.WinForms.Guna2PictureBox Picture;
     }
 }

@@ -111,6 +111,9 @@
     <EmbeddedResource Include="AdminGirisi.resx">
       <DependentUpon>AdminGirisi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ayarlar.resx">
+      <DependentUpon>Ayarlar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

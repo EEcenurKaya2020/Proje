@@ -16,6 +16,7 @@ namespace SınavSistemi
         public AdminGirisi()
         {
             InitializeComponent();
+            
         }
         SqlConnection baglanti;
         SqlCommand komut;
@@ -39,7 +40,7 @@ namespace SınavSistemi
             {
                 if (baglanti.State == ConnectionState.Closed)
                     baglanti.Open();
-                string kayit = "insert into Sorular (soru, a, b, c, d, dogru, resim) values(@soru, @a, @b, @c, @d, @dogru, @resim)";
+                string kayit = "insert into Soru (soru, a, b, c, d, dogruCevap) values(@soru, @a, @b, @c, @d, @dogruCevap)";
                 SqlCommand komut = new SqlCommand(kayit, baglanti);
 
                 komut.Parameters.AddWithValue("@soru", txt_sorua.Text);
@@ -47,7 +48,7 @@ namespace SınavSistemi
                 komut.Parameters.AddWithValue("@b", txt_ba.Text);
                 komut.Parameters.AddWithValue("@c", txt_ca.Text);
                 komut.Parameters.AddWithValue("@d", txt_da.Text);
-                komut.Parameters.AddWithValue("@dogru", txt_dgr.Text);
+                komut.Parameters.AddWithValue("@dogruCevap", txt_dgr.Text);
                 //komut.Parameters.Add("@resim", SqlDbType.Image, Picture.Length).Value = Picture;
                 //komut.Parameters.AddWithValue("@resim", Picture.Image);
 
@@ -60,7 +61,7 @@ namespace SınavSistemi
                 MessageBox.Show("Hata meydana geldi", hata.Message);
             }
 
-            string sorgu = "DELETE FROM SoruEkle WHERE Soru=@Soru";
+            string sorgu = "DELETE FROM SoruEklee WHERE Soru=@Soru";
             komut = new SqlCommand(sorgu, baglanti);
             komut.Parameters.AddWithValue("@Soru", Convert.ToString(txt_sorua.Text));
             baglanti.Open();
@@ -71,12 +72,13 @@ namespace SınavSistemi
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            string sorgu = "DELETE FROM SoruEkle WHERE Soru=@Soru";
+            string sorgu = "DELETE FROM SoruEklee WHERE Soru=@Soru";
             komut = new SqlCommand(sorgu, baglanti);
             komut.Parameters.AddWithValue("@Soru",Convert.ToString(txt_sorua.Text));
             baglanti.Open();
             komut.ExecuteNonQuery();
             baglanti.Close();
+            MessageBox.Show("Soru silindi");
             //Soru();
         }
 
@@ -84,7 +86,7 @@ namespace SınavSistemi
         {
             baglanti = new SqlConnection("Data Source=DESKTOP-HVTB9LK;Integrated Security=SSPI;Initial Catalog=YazilimYapimi");
             baglanti.Open();
-            da = new SqlDataAdapter("SELECT *FROM SoruEkle", baglanti);
+            da = new SqlDataAdapter("SELECT *FROM SoruEklee", baglanti);
             DataTable tablo = new DataTable();
             da.Fill(tablo);
             guna2DataGridView1.DataSource = tablo;
